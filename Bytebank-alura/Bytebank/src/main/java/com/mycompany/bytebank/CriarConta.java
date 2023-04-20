@@ -11,5 +11,25 @@ public class CriarConta {
         
         primeiraConta.saldo += 100;
         System.out.println(primeiraConta.saldo);
+        
+        Conta segundaConta = new Conta();
+        segundaConta.saldo = 50;
+        
+        System.out.println("A primeira conta tem: " + primeiraConta.saldo);
+        System.out.println("A segunda conta tem: " + segundaConta.saldo);
+        
+        System.out.println(primeiraConta.agencia);
+        System.out.println(primeiraConta.numero);
+        
+        System.out.println(segundaConta.agencia);
+        
+        segundaConta.agencia =145;
+        System.out.println("Agora a conta está na agencia " +segundaConta.agencia);
+        
+        if (primeiraConta==segundaConta) {
+        	System.out.println("Mesma coisa");
+        }
+        System.out.println(primeiraConta);
+        
     }
 }
